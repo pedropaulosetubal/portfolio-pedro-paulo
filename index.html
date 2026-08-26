@@ -3,271 +3,639 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Paulo Setubal Lopes | Portfólio</title>
+
+  <meta
+    name="description"
+    content="Portfólio de Pedro Paulo Setubal Lopes: desenvolvimento web, sistemas, automações e soluções digitais para empresas."
+  >
+
+  <meta name="theme-color" content="#05080d">
+
+  <title>Pedro Paulo Setubal Lopes | Desenvolvimento e Soluções Digitais</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <header class="hero">
-    <nav class="navbar">
-      <p class="logo">Pedro Setubal</p>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="tech-canvas" aria-hidden="true"></canvas>
+  <div id="code-background" class="code-background" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header id="inicio" class="hero">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">
+        <span>&lt;</span>Pedro Setubal<span>/&gt;</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <div class="nav-links">
         <a href="#sobre">Sobre</a>
-        <a href="#experiencia">Experiência</a>
+        <a href="#servicos">Soluções</a>
         <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#contato">Contato</a>
+        <a href="#habilidades">Tecnologias</a>
+        <a href="#contato" class="nav-cta">Contato</a>
       </div>
     </nav>
 
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="tag">Portfólio Profissional</p>
+    <div class="hero-content container">
+      <div class="hero-text reveal">
+        <div class="availability">
+          <span class="status-dot"></span>
+          Disponível para novos projetos
+        </div>
 
-        <h1>Pedro Paulo Setubal Lopes</h1>
-
-        <h2>Desenvolvedor em formação | Análise e Desenvolvimento de Sistemas</h2>
-
-        <p class="description">
-          Desenvolvedor em formação na área de Tecnologia da Informação, com experiência prática
-          no desenvolvimento de soluções digitais para clientes, criação de aplicações, projetos web,
-          prototipação, análise de demandas e atuação em equipe.
+        <p class="eyebrow">
+          Desenvolvimento • Automação • Inteligência Artificial
         </p>
 
-        <div class="buttons">
-          <a href="#projetos">Ver projetos</a>
-          <a href="#contato" class="secondary">Entrar em contato</a>
+        <h1>
+          Pedro Paulo<br>
+          <span>Setubal Lopes</span>
+        </h1>
+
+        <h2>
+          Transformo necessidades de empresas em
+          <span class="rotating-word" aria-live="polite">
+            soluções digitais.
+          </span>
+        </h2>
+
+        <p class="hero-description">
+          Desenvolvedor em formação com experiência prática em projetos reais,
+          atuando em equipe na criação de plataformas web, sistemas empresariais,
+          automações e produtos digitais orientados a resultados.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projetos" class="button button-primary">
+            Explorar projetos
+            <span aria-hidden="true">↘</span>
+          </a>
+
+          <a href="#contato" class="button button-secondary">
+            Iniciar uma conversa
+          </a>
+        </div>
+
+        <div class="hero-metrics" aria-label="Resumo profissional">
+          <div>
+            <strong>07</strong>
+            <span>projetos apresentados</span>
+          </div>
+
+          <div>
+            <strong>04</strong>
+            <span>áreas de atuação</span>
+          </div>
+
+          <div>
+            <strong>100%</strong>
+            <span>foco em solução</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-card profile-card">
-        <div class="profile-image">
-          <img src="assets/img/pedro.jpeg" alt="Foto de Pedro Paulo Setubal Lopes">
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+
+        <div class="profile-shell">
+          <div class="profile-image">
+            <img
+              src="assets/img/pedro.jpeg"
+              alt="Pedro Paulo Setubal Lopes"
+            >
+          </div>
+
+          <div class="profile-status">
+            <span class="status-dot"></span>
+            Projetando soluções
+          </div>
         </div>
 
-        <p class="card-label">Status atual</p>
+        <div class="terminal-card" aria-hidden="true">
+          <div class="terminal-header">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>pedro@portfolio:~</p>
+          </div>
 
-        <h3>Prestes a me formar em ADS</h3>
-
-        <p>
-          Cursando Análise e Desenvolvimento de Sistemas no CEUB Asa Norte,
-          com foco em desenvolvimento web, soluções digitais, tecnologia aplicada
-          a empresas e evolução contínua na área de TI.
-        </p>
+          <div class="terminal-body">
+            <p><span>$</span> iniciar_projeto</p>
+            <p><span>✓</span> estratégia definida</p>
+            <p><span>✓</span> experiência criada</p>
+            <p><span>✓</span> solução entregue</p>
+            <p class="terminal-cursor">_</p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <a
+      class="scroll-indicator"
+      href="#sobre"
+      aria-label="Ir para a próxima seção"
+    >
+      <span>Role para explorar</span>
+      <i></i>
+    </a>
   </header>
 
-  <section id="sobre" class="section">
-    <p class="section-tag">Sobre mim</p>
-    <h2>Perfil profissional</h2>
+  <main>
+    <section id="sobre" class="section">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <p class="section-tag">01 / Sobre</p>
+          <h2>Tecnologia com visão de negócio.</h2>
+        </div>
 
-    <p>
-      Sou Pedro Paulo Setubal Lopes, estudante de Análise e Desenvolvimento de Sistemas no CEUB Asa Norte,
-      em fase final de formação. Tenho interesse amplo pela área de tecnologia e busco construir uma carreira
-      sólida, unindo conhecimento técnico, visão prática, responsabilidade e vontade constante de aprender.
-    </p>
+        <div class="about-content reveal">
+          <p class="lead">
+            Sou Pedro Paulo Setubal Lopes, estudante de Análise e
+            Desenvolvimento de Sistemas no CEUB Asa Norte, em fase final
+            de formação.
+          </p>
 
-    <p>
-      Atualmente, já participo do desenvolvimento de soluções digitais para clientes, entendendo demandas reais,
-      contribuindo com ideias, organizando requisitos e atuando junto a uma equipe de desenvolvedores para entregar
-      projetos que resolvem problemas concretos de empresas.
-    </p>
-  </section>
+          <p>
+            Participo do desenvolvimento de soluções digitais para clientes,
+            colaborando na compreensão das demandas, organização de requisitos,
+            construção de funcionalidades e evolução dos projetos.
+          </p>
 
-  <section id="experiencia" class="section dark-section">
-    <p class="section-tag">Experiência prática</p>
-    <h2>Atuação com projetos reais</h2>
+          <p>
+            Meu objetivo é unir desenvolvimento, experiência do usuário e visão
+            de produto para criar ferramentas que simplifiquem processos e
+            gerem valor real para empresas.
+          </p>
 
-    <div class="experience-grid">
-      <div class="experience-card">
-        <h3>Desenvolvimento para clientes</h3>
-        <p>
-          Participação em projetos digitais voltados para empresas, com foco em entender a necessidade do cliente,
-          transformar demandas em soluções e contribuir para entregas funcionais e profissionais.
-        </p>
-      </div>
-
-      <div class="experience-card">
-        <h3>Trabalho em equipe</h3>
-        <p>
-          Atuação junto a uma equipe de desenvolvedores, colaborando na construção de aplicações, organização de ideias,
-          validação de funcionalidades e evolução dos projetos.
-        </p>
-      </div>
-
-      <div class="experience-card">
-        <h3>Visão de produto</h3>
-        <p>
-          Interesse em compreender não apenas o código, mas também o objetivo do sistema, o problema do cliente,
-          a experiência do usuário e o valor que a solução entrega para a empresa.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projetos" class="section">
-    <p class="section-tag">Projetos</p>
-    <h2>Projetos desenvolvidos</h2>
-
-    <div class="cards">
-      <div class="card">
-        <span class="project-type">Projeto acadêmico</span>
-        <h3>Projeto Integrador</h3>
-
-        <p>
-          Plataforma/site desenvolvido no Projeto Integrador da faculdade, com foco em aplicar conhecimentos de
-          desenvolvimento, organização de telas, estruturação de funcionalidades e construção de uma solução prática.
-        </p>
-
-        <div class="tech-list">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
+          <div class="about-chips">
+            <span>Visão de produto</span>
+            <span>Trabalho em equipe</span>
+            <span>Aprendizado contínuo</span>
+            <span>Foco no cliente</span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <span class="project-type">Projeto para cliente</span>
-        <h3>App Saúde e Vida</h3>
+    <section id="servicos" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">02 / Soluções</p>
+          <h2>Do problema à solução digital.</h2>
 
-        <p>
-          Aplicação desenvolvida para uma clínica, com objetivo de apoiar processos digitais, melhorar a experiência
-          dos usuários e oferecer uma solução mais organizada para a operação da empresa.
-        </p>
+          <p class="section-intro">
+            Competências aplicadas na construção de experiências digitais
+            funcionais, escaláveis e alinhadas aos objetivos de cada projeto.
+          </p>
+        </div>
 
-        <div class="tech-list">
-          <span>Aplicativo</span>
-          <span>UX</span>
-          <span>Solução digital</span>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-icon">&lt;/&gt;</span>
+            <span class="service-number">01</span>
+
+            <h3>Sites e plataformas</h3>
+
+            <p>
+              Interfaces responsivas e sistemas web pensados para desempenho,
+              clareza e evolução.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon">⚙</span>
+            <span class="service-number">02</span>
+
+            <h3>Automações</h3>
+
+            <p>
+              Fluxos digitais que reduzem tarefas repetitivas e tornam
+              operações mais eficientes.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon">AI</span>
+            <span class="service-number">03</span>
+
+            <h3>Inteligência artificial</h3>
+
+            <p>
+              Aplicação estratégica de IA para atendimento, produtividade
+              e apoio à tomada de decisão.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-icon">UX</span>
+            <span class="service-number">04</span>
+
+            <h3>Produto e experiência</h3>
+
+            <p>
+              Organização de requisitos, prototipação e construção de
+              jornadas centradas no usuário.
+            </p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <span class="project-type">Projeto empresarial</span>
-        <h3>App de Consultas Tributárias</h3>
+    <section id="projetos" class="section projects-section">
+      <div class="container">
+        <div class="section-heading projects-heading reveal">
+          <div>
+            <p class="section-tag">03 / Projetos</p>
+            <h2>Soluções que saíram do papel.</h2>
+          </div>
 
-        <p>
-          Projeto desenvolvido para uma empresa com foco em consultas tributárias, organização de informações e criação
-          de uma solução digital voltada para facilitar processos e acesso a dados relevantes.
-        </p>
+          <p class="section-intro">
+            Uma seleção de projetos acadêmicos e profissionais desenvolvidos
+            individualmente e em colaboração com a equipe.
+          </p>
+        </div>
 
-        <div class="tech-list">
-          <span>Sistema</span>
-          <span>Negócios</span>
-          <span>Tecnologia</span>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-type">Projeto acadêmico</span>
+              <span class="project-number">01</span>
+            </div>
+
+            <div class="project-content">
+              <h3>Projeto Integrador</h3>
+
+              <p>
+                Plataforma desenvolvida durante o Projeto Integrador da
+                faculdade, aplicando desenvolvimento, organização de telas
+                e estruturação de funcionalidades.
+              </p>
+            </div>
+
+            <div class="tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-type">Projeto para cliente</span>
+              <span class="project-number">02</span>
+            </div>
+
+            <div class="project-content">
+              <h3>App Saúde e Vida</h3>
+
+              <p>
+                Aplicação para uma clínica, criada para apoiar processos
+                digitais, melhorar a experiência dos usuários e organizar
+                a operação da empresa.
+              </p>
+            </div>
+
+            <div class="tech-list">
+              <span>Aplicativo</span>
+              <span>UX</span>
+              <span>Solução digital</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <span class="project-type">Projeto empresarial</span>
+              <span class="project-number">03</span>
+            </div>
+
+            <div class="project-content">
+              <h3>App de Consultas Tributárias</h3>
+
+              <p>
+                Sistema criado para organizar consultas tributárias,
+                facilitar o acesso a informações e apoiar processos
+                empresariais.
+              </p>
+            </div>
+
+            <div class="tech-list">
+              <span>Sistema</span>
+              <span>Negócios</span>
+              <span>Tecnologia</span>
+            </div>
+          </article>
+
+          <article class="project-card project-featured reveal">
+            <div class="project-card-top">
+              <span class="project-type">Plataforma para cliente</span>
+              <span class="project-number">04</span>
+            </div>
+
+            <div class="project-content">
+              <p class="project-highlight">
+                Catálogo digital • Gestão • Blocos 3D
+              </p>
+
+              <h3>COJUN</h3>
+
+              <p>
+                Plataforma web desenvolvida em equipe para organizar e
+                apresentar produtos de marcas ligadas à arquitetura e ao
+                design. Conta com catálogo, pesquisa, filtros, gerenciamento
+                de produtos, níveis de acesso e estrutura para disponibilização
+                de blocos 3D.
+              </p>
+            </div>
+
+            <div class="tech-list">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>Prisma</span>
+            </div>
+          </article>
+
+          <article class="project-card project-featured reveal">
+            <div class="project-card-top">
+              <span class="project-type">Tecnologia fiscal</span>
+              <span class="project-number">05</span>
+            </div>
+
+            <div class="project-content">
+              <p class="project-highlight">
+                Diagnóstico • Informação • Decisão
+              </p>
+
+              <h3>Raio X Fiscal</h3>
+
+              <p>
+                Aplicação web desenvolvida para organizar e analisar
+                informações fiscais, simplificando diagnósticos, visualização
+                de dados e acesso a informações importantes para a tomada
+                de decisão.
+              </p>
+            </div>
+
+            <div class="tech-list">
+              <span>Sistema web</span>
+              <span>Dados</span>
+              <span>Gestão fiscal</span>
+            </div>
+          </article>
+
+          <article class="project-card project-featured reveal">
+            <div class="project-card-top">
+              <span class="project-type">Plataforma especializada</span>
+              <span class="project-number">06</span>
+            </div>
+
+            <div class="project-content">
+              <p class="project-highlight">
+                Serviços • Experiência • Infraestrutura
+              </p>
+
+              <h3>Info Previdência</h3>
+
+              <p>
+                Plataforma digital voltada à organização de informações e
+                serviços previdenciários, estruturada para oferecer navegação
+                clara, atendimento digital e uma base preparada para novas
+                integrações.
+              </p>
+            </div>
+
+            <div class="tech-list">
+              <span>Plataforma web</span>
+              <span>UX</span>
+              <span>Cloud</span>
+            </div>
+          </article>
+
+          <article class="project-card project-featured reveal">
+            <div class="project-card-top">
+              <span class="project-type">Projeto editorial digital</span>
+              <span class="project-number">07</span>
+            </div>
+
+            <div class="project-content">
+              <p class="project-highlight">
+                Conteúdo • Design • Tecnologia
+              </p>
+
+              <h3>E-book Corporativo — Data Center</h3>
+
+              <p>
+                Desenvolvimento de e-book para uma empresa do segmento de
+                data centers, envolvendo organização de conteúdo técnico,
+                estrutura editorial, identidade visual e diagramação
+                profissional.
+              </p>
+            </div>
+
+            <div class="tech-list">
+              <span>Conteúdo</span>
+              <span>Design editorial</span>
+              <span>Tecnologia</span>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section id="habilidades" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">04 / Tecnologias</p>
+          <h2>Ferramentas que dão forma às ideias.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <span class="skill-label">01</span>
+            <h3>Desenvolvimento</h3>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>Next.js</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <span class="skill-label">02</span>
+            <h3>Dados e infraestrutura</h3>
+
+            <ul>
+              <li>PostgreSQL</li>
+              <li>Prisma</li>
+              <li>GitHub</li>
+              <li>AWS</li>
+              <li>Railway</li>
+              <li>Power BI</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <span class="skill-label">03</span>
+            <h3>Produto e produtividade</h3>
+
+            <ul>
+              <li>Figma</li>
+              <li>Prototipação</li>
+              <li>Excel</li>
+              <li>Análise de demandas</li>
+              <li>Documentação</li>
+              <li>Trabalho em equipe</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="processo" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">05 / Método</p>
+          <h2>Clareza em cada etapa.</h2>
+        </div>
+
+        <div class="process-list">
+          <article class="process-item reveal">
+            <span>01</span>
+
+            <div>
+              <h3>Entender</h3>
+              <p>
+                Compreensão do problema, do público e dos objetivos do projeto.
+              </p>
+            </div>
+          </article>
+
+          <article class="process-item reveal">
+            <span>02</span>
+
+            <div>
+              <h3>Planejar</h3>
+              <p>
+                Organização de requisitos, prioridades e caminho de
+                desenvolvimento.
+              </p>
+            </div>
+          </article>
+
+          <article class="process-item reveal">
+            <span>03</span>
+
+            <div>
+              <h3>Construir</h3>
+              <p>
+                Desenvolvimento colaborativo com atenção à experiência
+                e à qualidade.
+              </p>
+            </div>
+          </article>
+
+          <article class="process-item reveal">
+            <span>04</span>
+
+            <div>
+              <h3>Evoluir</h3>
+              <p>
+                Validação, melhoria contínua e preparação da solução
+                para crescer.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="container contact-panel reveal">
+        <div>
+          <p class="section-tag">06 / Contato</p>
+
+          <h2>
+            Tem uma ideia?<br>
+            <span>Vamos transformá-la.</span>
+          </h2>
+        </div>
+
+        <div class="contact-content">
+          <p>
+            Estou disponível para conversar sobre projetos, parcerias
+            e soluções digitais para empresas.
+          </p>
+
+          <div class="contact-links">
+            <a
+              href="mailto:peedrosetubal9@gmail.com"
+              class="button button-primary"
+            >
+              Enviar e-mail
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/pedropaulolopes9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              href="https://github.com/pedropaulosetubal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        © <span id="current-year"></span>
+        Pedro Paulo Setubal Lopes
+      </p>
+
+      <p>Desenvolvido com estratégia, código e propósito.</p>
+
+      <a href="#inicio">Voltar ao topo ↑</a>
     </div>
-  </section>
+  </footer>
 
-  <section id="habilidades" class="section dark-section">
-    <p class="section-tag">Competências</p>
-    <h2>Habilidades técnicas</h2>
-
-    <div class="skills-container">
-      <div>
-        <h3>Desenvolvimento</h3>
-
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>GitHub</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Design, dados e produtividade</h3>
-
-        <ul class="skills">
-          <li>Figma</li>
-          <li>Excel</li>
-          <li>Power BI</li>
-          <li>Prototipação</li>
-          <li>Análise de demandas</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="diferenciais" class="section">
-    <p class="section-tag">Diferenciais</p>
-    <h2>O que levo para uma empresa</h2>
-
-    <div class="cards">
-      <div class="card small-card">
-        <h3>Proatividade</h3>
-        <p>
-          Busco aprender, testar soluções, participar dos projetos e contribuir além do básico.
-        </p>
-      </div>
-
-      <div class="card small-card">
-        <h3>Aprendizado contínuo</h3>
-        <p>
-          Tenho interesse constante em evoluir tecnicamente e acompanhar as necessidades do mercado de tecnologia.
-        </p>
-      </div>
-
-      <div class="card small-card">
-        <h3>Visão de solução</h3>
-        <p>
-          Procuro entender o problema antes de pensar apenas na ferramenta ou no código.
-        </p>
-      </div>
-
-      <div class="card small-card">
-        <h3>Responsabilidade</h3>
-        <p>
-          Levo projetos com seriedade, organização e compromisso com a entrega.
-        </p>
-      </div>
-
-      <div class="card small-card">
-        <h3>Trabalho em equipe</h3>
-        <p>
-          Valorizo colaboração, comunicação clara, troca de conhecimento e evolução em conjunto.
-        </p>
-      </div>
-
-      <div class="card small-card">
-        <h3>Potencial de crescimento</h3>
-        <p>
-          Estou no início da carreira em TI, mas já busco atuar com mentalidade profissional e foco em evolução.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="objetivo" class="section dark-section">
-    <p class="section-tag">Objetivo profissional</p>
-    <h2>Buscando evolução na área de tecnologia</h2>
-
-    <p>
-      Busco uma oportunidade de estágio ou primeira posição formal na área de Tecnologia da Informação, onde eu possa
-      aplicar meus conhecimentos, aprender com profissionais experientes e contribuir com projetos reais. Tenho interesse
-      em desenvolvimento web, sistemas, automação, dados, inteligência artificial e soluções digitais para empresas.
-    </p>
-  </section>
-
-  <section id="contato" class="section contact-section">
-    <p class="section-tag">Contato</p>
-    <h2>Vamos conversar?</h2>
-
-    <p>
-      Estou aberto a oportunidades de estágio, projetos, networking profissional e conexões na área de tecnologia.
-    </p>
-
-    <div class="contact-links">
-  <a href="https://github.com/pedropaulosetubal" target="_blank">GitHub</a>
-  <a href="https://www.linkedin.com/in/pedropaulolopes9" target="_blank">LinkedIn</a>
-  <a href="mailto:peedrosetubal9@gmail.com">E-mail</a>
-</div>
-  </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
